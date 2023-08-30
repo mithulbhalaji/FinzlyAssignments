@@ -4,20 +4,20 @@ package com.assignment.project;
 import java.util.Set;
 
 public class Team {
-    private Set<String> teamName;
+    private Set<String> teamMembers;
     private String projectDetails;
 
     public Team(Set<String> teamName, String projectDetails) {
-        this.teamName = teamName;
+        this.teamMembers = teamName;
         this.projectDetails = projectDetails;
     }
 
-    public Set<String> getTeamName() {
-        return teamName;
+    public Set<String> getTeamMembers() {
+        return teamMembers;
     }
 
-    public void setTeamName(Set<String> teamName) {
-        this.teamName = teamName;
+    public void setTeamName(Set<String> teamMembers) {
+        this.teamMembers = teamMembers;
     }
 
     public String getProjectDetails() {
@@ -31,7 +31,7 @@ public class Team {
     @Override
     public String toString() {
         return "Team{" +
-                "teamName=" + teamName +
+                "teamMembers=" + teamMembers +
                 ", projectDetails='" + projectDetails + '\'' +
                 '}';
     }
